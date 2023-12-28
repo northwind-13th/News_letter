@@ -1,0 +1,260 @@
+*{
+    margin:0px;
+    padding:0px;
+    margin-left:0px;
+    padding-left:0px;
+    padding-top:0px;
+    left:0px;
+    }
+    #newsletter{
+        width: 58rem;
+        height: 35rem;
+        border:2px solid #15031F;
+        margin: 2rem 2rem 2rem 2rem;
+    }
+#news_letter_card{
+    align-items: center;
+    width: 50rem;
+    height: 30rem;
+    margin: 1rem 1rem 1rem 1rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #15031F;
+    box-shadow: -12.79438px -10.2355px 39.66258px 0px rgba(255, 255, 255, 0.25), 8.95607px 12.79438px 39.66258px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding-left: 1.8rem;
+   
+}
+#user_info{
+    width: 27rem;
+    height: 3rem;
+    grid-area: user_info;
+}
+#news_letter_card{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header header'
+    'about about about smbl_div smbl_div smbl_div smbl_div smbl_div'
+    'about about about smbl_div smbl_div smbl_div smbl_div smbl_div'
+    'user_info user_info user_info smbl_div smbl_div smbl_div smbl_div smbl_div'
+    'cdcmps cdcmps cdcmps smbl_div smbl_div smbl_div smbl_div smbl_div';
+    grid-area: news_letter_card;
+    gap: 1rem;
+}
+#email{
+    grid-area: email;
+    width: 18rem;
+    height: 2.8rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #e9e6e6;
+    box-sizing: border-box;
+    margin-right: 0.5vw;
+}
+#email::placeholder{
+    font-family: Nunito;
+    font-size: 1.1rem;
+}
+#subscribe{
+    grid-area: subscribe;
+    width: 7.5rem;
+    height: 2.8rem;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-radius: 0.625rem;
+    background: #1EB9F2;
+}
+#subscribe span{
+    width: 6.3125rem;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    
+}
+#header{
+    grid-area: header;
+    width: 46.82594rem;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    color: #FFF;
+    /* heading 1 */
+    font-family: Bebas Neue;
+    font-size: 3.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#header span{
+    color: #1EB9F2;
+    /* heading 1 */
+    font-family: Bebas Neue;
+    font-size: 3.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#about{
+    grid-area: about;
+    width:27rem;
+    flex-shrink: 0;
+    color: #FFF;
+    /* Paragraph */
+    font-family: Nunito;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#cdcmps{
+width: 20rem;
+flex-shrink: 0;
+}
+#cdcmps_div{
+    grid-area: cdcmps;
+    width: 20rem;
+    height: 9rem;
+    flex-shrink: 0;
+    margin: 1.5rem 1rem 3rem 1rem;
+}
+#smbl{
+    width: 25rem;
+    flex-shrink: 0;
+}
+#smbl_div{
+    grid-area: smbl_div;
+    width: 25rem;
+    height: 24rem;
+    flex-shrink: 0;
+
+}
+@media screen and (min-width:450px) and (max-width: 768px) {
+   
+    #newsletter{
+        width: 45rem;
+        height: 40rem;
+    }
+    #news_letter_card{
+        width: 38rem;
+        height: 32rem;
+        display: grid;
+        grid-template-areas:
+        'header header header header'
+        'about about about about'
+        'user_info user_info user_info user_info'
+        'cdcmps cdcmps cdcmps cdcmps'
+        ;
+    }
+    #user_info{
+        width: 38rem;
+    }
+    #email{
+        width: 24rem;
+        height: 2.975rem;
+    }
+    #subscribe{
+        width: 8.1rem;
+        height: 2.975rem;
+    }
+    #subscribe span{
+        width: 6.8rem;
+        font-size: 1.1rem;
+    }
+    #header{
+        width: 35rem;
+        height: 3.1875;
+        font-size: 3.3rem;
+    }
+    #header span{
+        font-size: 3.3rem;
+    }
+    #about{
+    width: 30rem;
+    font-size:1.2rem;
+    }
+    #cdcmps{
+        width: 24rem;
+        height: 8rem;
+    }
+    #cdcmps_div{
+    width: 25rem;
+    height: 9rem;
+    }
+    #smbl_div{
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px){
+#newsletter{
+    width: 70rem;
+    height: 90rem;
+}
+#news_letter_card{
+    width: 63rem;
+    height: 80rem;
+    border-radius: 3rem;
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'about about about about'
+    'user_info user_info user_info user_info'
+    'cdcmps cdcmps cdcmps cdcmps';
+}
+#user_info{
+    width:57rem;
+    height: 15rem;
+    display: grid;
+    grid-template-areas: 'email email subscribe';
+}
+#email{
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    width: 40rem;
+    height: 7rem;
+}
+#subscribe{
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    width: 14rem;
+    height: 7rem;
+}
+#subscribe span{
+    font-size: 2.4rem;
+}
+#email::placeholder{
+    font-size: 2.6rem;
+}
+#header{
+    margin-top: 4rem;
+    width: 55rem;
+    height: 18rem;
+    font-size: 6.3rem;
+}
+#header span{
+    font-size: 6.3rem;
+}
+#about{
+    width: 45rem;
+    font-size:2.5rem;
+}
+#user_info,#header,#about,#cdcmps_div{
+    margin-left: 2rem;
+}
+#cdcmps{
+    width: 45rem;
+    height: 15rem;
+}
+#cdcmps_div{
+    width: 50rem;
+    height: 18rem;
+    margin-left: 4rem;
+}
+#smbl_div{
+    display: none;
+}
+
+}
