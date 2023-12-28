@@ -6,11 +6,15 @@
     padding-top:0px;
     left:0px;
     }
+    html,body{
+        margin: 0;
+        height: 100vh;
+    }
     #newsletter{
-        width: 58rem;
-        height: 35rem;
+        width: 54rem;
+        height: 32rem;
         border:2px solid #15031F;
-        margin: 2rem 2rem 2rem 2rem;
+        /* margin: 2rem 2rem 2rem 2rem; */
     }
 #news_letter_card{
     align-items: center;
@@ -33,11 +37,12 @@
 #news_letter_card{
     display: grid;
     grid-template-areas:
-    'header header header header header header header header'
-    'about about about smbl_div smbl_div smbl_div smbl_div smbl_div'
-    'about about about smbl_div smbl_div smbl_div smbl_div smbl_div'
-    'user_info user_info user_info smbl_div smbl_div smbl_div smbl_div smbl_div'
-    'cdcmps cdcmps cdcmps smbl_div smbl_div smbl_div smbl_div smbl_div';
+    'header header header header header'
+    'about about about smbl_div smbl_div'
+    'user_info user_info user_info smbl_div smbl_div'
+    'cdcmps cdcmps cdcmps smbl_div smbl_div';
+   grid-template-columns: 20% 20% 5% 30% 17%;
+   grid-template-rows: 14% 20% 12% 42%;
     grid-area: news_letter_card;
     gap: 1rem;
 }
@@ -121,33 +126,34 @@ flex-shrink: 0;
     margin: 1.5rem 1rem 3rem 1rem;
 }
 #smbl{
-    width: 25rem;
+    width: 27rem;
     flex-shrink: 0;
 }
 #smbl_div{
     grid-area: smbl_div;
-    width: 25rem;
-    height: 24rem;
+    width: 28rem;
+    height: 28rem;
     flex-shrink: 0;
-
+    z-index: +1;
 }
 @media screen and (min-width:450px) and (max-width: 768px) {
    
     #newsletter{
-        width: 45rem;
-        height: 40rem;
+        width: 40rem;
+        height: 34rem;
     }
     #news_letter_card{
-        width: 38rem;
+        width: 36rem;
         height: 32rem;
         display: grid;
         grid-template-areas:
         'header header header header'
         'about about about about'
         'user_info user_info user_info user_info'
-        'cdcmps cdcmps cdcmps cdcmps'
-        ;
+        'cdcmps cdcmps cdcmps cdcmps';
+        grid-template-columns: 25% 25% 20% 15%;
     }
+    
     #user_info{
         width: 38rem;
     }
@@ -189,72 +195,73 @@ flex-shrink: 0;
 }
 
 @media screen and (max-width:450px){
-#newsletter{
-    width: 70rem;
-    height: 90rem;
-}
-#news_letter_card{
-    width: 63rem;
-    height: 80rem;
-    border-radius: 3rem;
-    display: grid;
+    #smbl_div{
+        display: none;
+    }
+   #newsletter{
+    width: 82vw;
+    height:125vw;
+    margin: 5vw auto;
+   }
+   #user_info, #email, #subscribe, #header, #about, #cdcmps_div{
+    padding: 0;
+    margin: 0;
+    }
+   #news_letter_card{
+    margin: 0;
+    width: 80vw;
+    height: 120vw;
     grid-template-areas:
-    'header header header header'
-    'about about about about'
-    'user_info user_info user_info user_info'
-    'cdcmps cdcmps cdcmps cdcmps';
-}
-#user_info{
-    width:57rem;
-    height: 15rem;
-    display: grid;
-    grid-template-areas: 'email email subscribe';
-}
-#email{
-    margin-top: 2rem;
-    border-radius: 1.5rem;
-    width: 40rem;
-    height: 7rem;
-}
-#subscribe{
-    margin-top: 2rem;
-    border-radius: 1.5rem;
-    width: 14rem;
-    height: 7rem;
-}
-#subscribe span{
-    font-size: 2.4rem;
-}
-#email::placeholder{
-    font-size: 2.6rem;
-}
-#header{
-    margin-top: 4rem;
-    width: 55rem;
-    height: 18rem;
-    font-size: 6.3rem;
-}
-#header span{
-    font-size: 6.3rem;
-}
-#about{
-    width: 45rem;
-    font-size:2.5rem;
-}
-#user_info,#header,#about,#cdcmps_div{
-    margin-left: 2rem;
-}
-#cdcmps{
-    width: 45rem;
-    height: 15rem;
-}
-#cdcmps_div{
-    width: 50rem;
-    height: 18rem;
-    margin-left: 4rem;
-}
-#smbl_div{
-    display: none;
-}
+    'header header header'
+    'about about about'
+    'user_info user_info user_info'
+    'cdcmps cdcmps cdcmps'
+    ;
+    grid-template-columns:32% 32% 25% ;
+    grid-template-rows:22% 25% 12% 25%;
+    padding-left: 5vw;
+    box-sizing: border-box;
+    border-radius: 5vw;
+    }
+    #user_info{
+        width:74vw ;
+    }
+    #email{
+        width: 50vw;
+        height: 10vw;
+        border-radius: 3vw;
+    }
+    #email::placeholder{
+        font-size: 4vw;
+    }
+    #subscribe{
+        width: 20vw;
+        height: 10vw;
+    }
+    #subscribe span{
+        width: 5.8rem;
+        font-size: 3.5vw;
+    }
+    #header{
+        width:80vw;
+        height: 20vw;
+        font-size: 10vw;
+    }
+    #header span{
+        font-size: 10vw;
+    }
+    #about{
+    width: 72vw;
+    height: 30vw;
+    font-size:4.1vw ;
+    }
+    #cdcmps{
+        width: 68vw;
+        height: 22.66vw;
+    }
+    #cdcmps_div{
+    width: 70vw;
+    height: 23vw;
+    }
 
 }
