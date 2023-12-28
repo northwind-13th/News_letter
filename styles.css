@@ -199,7 +199,7 @@ flex-shrink: 0;
         display: none;
     }
    #newsletter{
-    width: 82vw;
+    width: 85vw;
     height:125vw;
     margin: 5vw auto;
    }
@@ -209,7 +209,7 @@ flex-shrink: 0;
     }
    #news_letter_card{
     margin: 0;
-    width: 80vw;
+    width: 85vw;
     height: 120vw;
     grid-template-areas:
     'header header header'
