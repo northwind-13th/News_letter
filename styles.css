@@ -13,8 +13,7 @@
     #newsletter{
         width: 54rem;
         height: 32rem;
-        border:2px solid #15031F;
-        /* margin: 2rem 2rem 2rem 2rem; */
+        margin:10vw auto;
     }
 #news_letter_card{
     align-items: center;
@@ -55,6 +54,7 @@
     background: #e9e6e6;
     box-sizing: border-box;
     margin-right: 0.5vw;
+    border:none;
 }
 #email::placeholder{
     font-family: Nunito;
@@ -68,6 +68,7 @@
     box-sizing: border-box;
     border-radius: 0.625rem;
     background: #1EB9F2;
+    border:none;
 }
 #subscribe span{
     width: 6.3125rem;
