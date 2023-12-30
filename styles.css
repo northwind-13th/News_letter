@@ -1,21 +1,20 @@
-*{
-    margin:0px;
-    padding:0px;
-    margin-left:0px;
-    padding-left:0px;
-    padding-top:0px;
-    left:0px;
-    }
-    html,body{
-        margin: 0;
-        height: 100vh;
-    }
-    #newsletter{
-        width: 54rem;
-        height: 32rem;
-        margin:10vw auto;
-    }
-#news_letter_card{
+* {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    left: 0px;
+}
+html, body {
+    margin: 0;
+    height: 100vh;
+}
+#nwslttr {
+    width: 54rem;
+    height: 32rem;
+}
+#nwslttr_crd {
     align-items: center;
     width: 50rem;
     height: 30rem;
@@ -28,25 +27,25 @@
     padding-left: 1.8rem;
    
 }
-#user_info{
+#usr_inf {
     width: 27rem;
     height: 3rem;
-    grid-area: user_info;
+    grid-area: usr_inf;
 }
-#news_letter_card{
+#nwslttr_crd {
     display: grid;
     grid-template-areas:
-    'header header header header header'
-    'about about about smbl_div smbl_div'
-    'user_info user_info user_info smbl_div smbl_div'
+    'hdr hdr hdr hdr hdr'
+    'abt abt abt smbl_div smbl_div'
+    'usr_inf usr_inf usr_inf smbl_div smbl_div'
     'cdcmps cdcmps cdcmps smbl_div smbl_div';
    grid-template-columns: 20% 20% 5% 30% 17%;
    grid-template-rows: 14% 20% 12% 42%;
-    grid-area: news_letter_card;
+    grid-area: nwslttr_crd;
     gap: 1rem;
 }
-#email{
-    grid-area: email;
+#eml {
+    grid-area: eml;
     width: 18rem;
     height: 2.8rem;
     flex-shrink: 0;
@@ -54,23 +53,23 @@
     background: #e9e6e6;
     box-sizing: border-box;
     margin-right: 0.5vw;
-    border:none;
+    border: none;
 }
-#email::placeholder{
+#eml::placeholder {
     font-family: Nunito;
     font-size: 1.1rem;
 }
-#subscribe{
-    grid-area: subscribe;
+#sbscrb {
+    grid-area: sbscrb;
     width: 7.5rem;
     height: 2.8rem;
     flex-shrink: 0;
     box-sizing: border-box;
     border-radius: 0.625rem;
     background: #1EB9F2;
-    border:none;
+    border: none;
 }
-#subscribe span{
+#sbscrb span {
     width: 6.3125rem;
     color: #FFF;
     font-family: Nunito;
@@ -80,8 +79,8 @@
     line-height: normal;
     
 }
-#header{
-    grid-area: header;
+#hdr {
+    grid-area: hdr;
     width: 46.82594rem;
     height: 3rem;
     margin-top: 2rem;
@@ -94,7 +93,7 @@
     font-weight: 400;
     line-height: normal;
 }
-#header span{
+#hdr span {
     color: #1EB9F2;
     /* heading 1 */
     font-family: Bebas Neue;
@@ -103,8 +102,8 @@
     font-weight: 400;
     line-height: normal;
 }
-#about{
-    grid-area: about;
+#abt {
+    grid-area: abt;
     width:27rem;
     flex-shrink: 0;
     color: #FFF;
@@ -115,22 +114,22 @@
     font-weight: 400;
     line-height: normal;
 }
-#cdcmps{
+#cdcmps {
 width: 20rem;
 flex-shrink: 0;
 }
-#cdcmps_div{
+#cdcmps_div {
     grid-area: cdcmps;
     width: 20rem;
     height: 9rem;
     flex-shrink: 0;
     margin: 1.5rem 1rem 3rem 1rem;
 }
-#smbl{
+#smbl {
     width: 27rem;
     flex-shrink: 0;
 }
-#smbl_div{
+#smbl_div {
     grid-area: smbl_div;
     width: 28rem;
     height: 28rem;
@@ -139,83 +138,83 @@ flex-shrink: 0;
 }
 @media screen and (min-width:450px) and (max-width: 768px) {
    
-    #newsletter{
+    #nwslttr {
         width: 40rem;
         height: 34rem;
     }
-    #news_letter_card{
+    #nwslttr_crd {
         width: 36rem;
         height: 32rem;
         display: grid;
         grid-template-areas:
-        'header header header header'
-        'about about about about'
-        'user_info user_info user_info user_info'
+        'hdr hdr hdr hdr'
+        'abt abt abt abt'
+        'usr_inf usr_inf usr_inf usr_inf'
         'cdcmps cdcmps cdcmps cdcmps';
         grid-template-columns: 25% 25% 20% 15%;
     }
     
-    #user_info{
+    #usr_inf {
         width: 38rem;
     }
-    #email{
+    #eml {
         width: 24rem;
         height: 2.975rem;
     }
-    #subscribe{
+    #sbscrb {
         width: 8.1rem;
         height: 2.975rem;
     }
-    #subscribe span{
+    #sbscrb span {
         width: 6.8rem;
         font-size: 1.1rem;
     }
-    #header{
+    #hdr {
         width: 35rem;
         height: 3.1875;
         font-size: 3.3rem;
     }
-    #header span{
+    #hdr span {
         font-size: 3.3rem;
     }
-    #about{
+    #abt {
     width: 30rem;
     font-size:1.2rem;
     }
-    #cdcmps{
+    #cdcmps {
         width: 24rem;
         height: 8rem;
     }
-    #cdcmps_div{
+    #cdcmps_div {
     width: 25rem;
     height: 9rem;
     }
-    #smbl_div{
+    #smbl_div {
         display: none;
     }
 }
 
-@media screen and (max-width:450px){
-    #smbl_div{
+@media screen and (max-width:450px) {
+    #smbl_div {
         display: none;
     }
-   #newsletter{
+   #nwslttr {
     width: 85vw;
     height:125vw;
     margin: 5vw auto;
    }
-   #user_info, #email, #subscribe, #header, #about, #cdcmps_div{
+   #usr_inf, #eml, #sbscrb, #hdr, #abt, #cdcmps_div {
     padding: 0;
     margin: 0;
     }
-   #news_letter_card{
+   #nwslttr_crd {
     margin: 0;
     width: 85vw;
     height: 120vw;
     grid-template-areas:
-    'header header header'
-    'about about about'
-    'user_info user_info user_info'
+    'hdr hdr hdr'
+    'abt abt abt'
+    'usr_inf usr_inf usr_inf'
     'cdcmps cdcmps cdcmps'
     ;
     grid-template-columns:32% 32% 25% ;
@@ -224,45 +223,45 @@ flex-shrink: 0;
     box-sizing: border-box;
     border-radius: 5vw;
     }
-    #user_info{
+    #usr_inf {
         width:74vw ;
     }
-    #email{
+    #eml {
         width: 50vw;
         height: 10vw;
-        border-radius: 3vw;
+        border-radius: 2.5vw;
+        margin-right: 0.5vw;
     }
-    #email::placeholder{
+    #eml::placeholder {
         font-size: 4vw;
     }
-    #subscribe{
+    #sbscrb {
         width: 20vw;
         height: 10vw;
     }
-    #subscribe span{
+    #sbscrb span {
         width: 5.8rem;
         font-size: 3.5vw;
     }
-    #header{
+    #hdr {
         width:80vw;
         height: 20vw;
         font-size: 10vw;
     }
-    #header span{
+    #hdr span {
         font-size: 10vw;
     }
-    #about{
+    #abt {
     width: 72vw;
     height: 30vw;
     font-size:4.1vw ;
     }
-    #cdcmps{
+    #cdcmps {
         width: 68vw;
         height: 22.66vw;
     }
-    #cdcmps_div{
+    #cdcmps_div {
     width: 70vw;
     height: 23vw;
     }
-
 }
